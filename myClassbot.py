@@ -7,7 +7,7 @@ class searchPic :
         # self.main_img = cv.imread(main_img,cv.IMREAD_ANYCOLOR)
         self.temp_img = cv.imread(temp_img,cv.IMREAD_ANYCOLOR)
         
-    def find(self,debug=False ,accuracym=0.9,text=""):
+    def find(self,debug=False ,accuracym=0.85,text=""):
         result = cv.matchTemplate(self.main_img,self.temp_img,cv.TM_CCOEFF_NORMED)
         # main เป็นตัวหลัก temp เป็นตัวที่ต้องการค้นหา
         
